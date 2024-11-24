@@ -20,3 +20,55 @@
 [Tenga cuidado con este comando]
 > sudo pacman -Rsc (PAQUETE)
 
+# Para eliminar un paquete, el cual es requerido por otro paquete, sin quitar el paquete dependiente
+[Tenga cuidado con este comando]
+> sudo pacman -Rdd (PAQUETE)
+
+# Eliminar un paquete, dependencias y configuracion
+> sudo pacman -Rns (PAQUETE)
+
+# Actualizar paquetes y sincronizar base de datos
+> pacman -Syu
+> pacman -Syyu (forzado)
+# Base de datos
+> pacman -Sy
+> pacman -Syy (forzado)
+
+# Consultar la base de datos de los paquetes
+> sudo pacman -Ss (CADENA 1 CADENA 2)
+
+# Buscar paquetes 
+> sudo pacman -Ss
+
+# Buscar paquetes ya instalados 
+> sudo pacman -Qs (CADENA 1 CADENA 2)
+
+# Para mostrar información detallada acerca de un determinado paquete
+> sudo pacman -Si (PAQUETE)
+
+# Para conocer los paquetes instalados en el sistema
+> sudo pacman -Qi (PAQUETE)
+
+# Para listar todos los paquetes que no sean necesarios como dependencias
+> sudo pacman -Qdt 
+
+# Limpiar la memoria caché de los paquetes
+> paccache -r
+
+# Para eliminar todos los paquetes en caché que no están instalados actualmente
+> sudo pacman -Sc
+
+# Descargar un paquete sin instalarlo
+> sudo pacman -Sw (PAQUETE)
+
+# Sincronice la base de datos de archivos
+> sudo pacman -Fy
+
+# Evitar la actualización de un grupo de paquetes
+> IgnoreGroup=(PAQUETE)
+
+# Instalar flatpak en archlinux
+> sudo pacman -S flatpak
+
+# Actualizar aplicaciones flatpak 
+> sudo flatpak update 
