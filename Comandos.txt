@@ -71,4 +71,51 @@
 > sudo pacman -S flatpak
 
 # Actualizar aplicaciones flatpak 
-> sudo flatpak update 
+> sudo flatpak update
+
+# Eliminar aplicaciones flatpak
+> sudo flatpak remove (APP)
+
+# Instalar snap en archlinux 
+> git clone https://aur.archlinux.org/snapd.git
+> cd snapd
+> makepkg -si
+> sudo systemctl enable --now snapd.socket
+> sudo systemctl enable --now snapd.apparmor.service
+
+# Actualizar aplicaciones snap
+> sudo snap refresh
+
+# Eliminar aplicaciones snap 
+> sudo snap remove (APP)
+
+# Instalar yay (PUEDES USAR -S -Sy -Syu -Rns)
+> sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+
+# Instalar steam 
+> sudo pacman -S steam
+
+# Bluetooth
+> sudo pacman -S bluez bluez-utils blueman
+> sudo systemctl start bluetooth.service
+> sudo systemctl enable bluetooth.service
+> sudo pacman -S pulseaudio-bluetooth
+
+# Audio
+Si eres pulseaudio:
+> sudo pacman -S pulseaudio
+> sudo pacman -S pulseaudio-bluetooth
+Si eres pipewire:
+> sudo pacman -S pipewire
+Menu de control:
+> sudo pacman -S pavucontrol
+
+# Instalar discord
+> sudo pacman -S discord 
+Usar yay:
+yay -S discord
+
+# Instalar spotify 
+> sudo pacman -S spotify-launcher
+
+
