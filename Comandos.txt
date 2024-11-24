@@ -1,2 +1,22 @@
-# Empezar a instalar archlinux:
+# Empezar a instalar archlinux
 > archinstall
+
+# Instalar paquetes específicos
+> sudo pacman -S (PAQUETE 1 PAQUETE 2)
+
+# Instalar grupos de paquetes
+> sudo pacman -S (PAQUETE)
+
+# Para ver que paquetes pertenecen al grupo
+> sudo pacman -Sg (PAQUETE)
+
+# Desinstalar paquetes
+> sudo pacman -R (PAQUETE)
+
+# Para eliminar un paquete y sus dependencias
+> sudo pacman -Rs (PAQUETE)
+
+# Para eliminar un paquete, sus dependencias y todos los paquetes que dependen de esas dependencias
+[Tenga cuidado con este comando]
+> sudo pacman -Rsc (PAQUETE)
+
