@@ -118,4 +118,13 @@ yay -S discord
 # Instalar spotify 
 > sudo pacman -S spotify-launcher
 
+# Instalar wine
+> sudo pacman -S wine 
+> sudo pacman -S wine-mono
+
+# Instalar linux-zen
+> sudo -S pacman -S linux-zen linux-zen-headers
+[CONFIGURAR Y ACTUALIZAR GRUB]
+
+...
 
